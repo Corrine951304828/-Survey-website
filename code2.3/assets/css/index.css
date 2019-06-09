@@ -1,0 +1,220 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.section{
+    width: 100vw;
+    height: 100vh;
+    font-weight: bold;
+    font-size: 1.1em;
+    background-color:#ffb4b9;
+    z-index:-10;
+    zoom: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+}
+@media screen and (max-width:768px){ 
+    .img-resp{ 
+        width: 70%;
+    }
+}
+.form-control {
+    background-color: #d9edf769;
+}
+/* 小型设备（手机，768px 起） */
+@media screen and (max-width:768px){ 
+    .section{ 
+        background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        background-image:url(../images/bg.png);
+    }
+}
+/* 小型设备（平板电脑，768px 起） */
+@media screen and (min-width:768px){ 
+    .section{ 
+        background-size: contain;
+        -webkit-background-size: contain;
+        -o-background-size: contain;
+        background-image:url(../images/bg.png);
+    }
+}
+
+/* 中型设备（台式电脑，992px 起） */
+@media screen and (min-width:992px){ 
+    .section{ 
+        background-size: contain;
+        -webkit-background-size: contain;
+        -o-background-size: contain;
+        background-image:url(../images/bg.png);
+    }
+}
+
+/* 大型设备（大台式电脑，1200px 起） */
+@media screen and (min-width:1200px){ 
+    .section{ 
+        background-size: contain;
+        -webkit-background-size: contain;
+        -o-background-size: contain;
+        background-image:url(../images/bg-lg.png);
+    /*background-repeat: repeat;*/
+    }
+}
+
+h1{
+    margin: 0px;
+}
+.main-wrap{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: 500ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+.a .container .row{
+    text-align: center;
+    padding-top: 35vh;
+    line-height: 30px;
+    /*font-size: 1em;
+    line-height: 1em;*/
+    color: #000;
+}
+.b .container,.c .container,.d .container,.g .container{
+    text-align: center;
+    font-size: 1em;
+    padding-top: 15vh;
+}
+.e .container{
+    text-align: center;
+    font-size: 1em;
+    padding-top: 7vh;
+}
+.h .container{
+    text-align: center;
+    font-size: 1em;
+    padding-top: 10vh;
+}
+.f .container{
+    text-align: center;
+    font-size: 1em;
+    padding-top: 10vh;
+}
+.i .container{
+    font-size: 1em;
+    padding-top: 25vh;
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+.i .container .submitText{
+    text-align: center;
+}
+.i .container .form-group {
+    margin-bottom: 5vh;
+}
+.j .container .row{
+    text-align: center;
+    padding-top: 16vh;
+    line-height: 30px;
+    color: #000;
+}
+.j .container .row .list-group {
+    margin-top: 5vh;
+}
+.j .container .row .list-group-item {
+    background-color:#ff7aa336 !important;
+    background-color: white;
+    border: none;
+    margin-top: 1vh;
+}
+.a .nav{
+    background: #FFFFFF;
+}
+.a .nav .admin{
+    float: left;
+    background: none;
+}
+.a .nav .logo{
+}
+.padding-3{
+    padding: 3%;
+}
+/* .img-padding{
+    padding: 15%;
+} */
+.margin-bottom{
+    margin-bottom: 12vh;
+}
+.margin-bottom-5{
+    margin-bottom: 5vh;
+}
+/* 自定义radio */
+.radio {
+    position: relative;
+    line-height: 30px;
+}
+.checkbox {
+    position: relative;
+    line-height: 1.5em;
+}
+
+.radio input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+}
+
+.checkbox input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+}
+
+.radio label {
+    position: absolute;
+    left: 5px;
+    top: 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #999;
+}
+.checkbox label {
+    position: absolute;
+    left: 5px;
+    top: 3px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999;
+}
+/*设置选中的input的样式*/
+/* + 是兄弟选择器,获取选中后的label元素*/
+.radio input:checked+label,.checkbox input:checked+label{ 
+    background-color: #fe6d32;
+    border: 1px solid #fe6d32;
+}
+
+.radio input:checked+label::after,.checkbox input:checked+label::after {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 10px;
+    top: 3px;
+    left: 6px;
+    border: 2px solid #fff;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg)
+}
+.radio span,.checkbox span{
+    position: absolute;
+    left: 30px;
+}
