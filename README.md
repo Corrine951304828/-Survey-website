@@ -1,6 +1,6 @@
 # Survey-website
-在线护肤测试网站
-应用技术：html,css,js,axios,jquery,boostrap
+- 在线护肤测试网站
+- 应用技术：html,css,js,axios,jquery,boostrap
 
 ## 开发说明
 - Survey-website/code2.3/assets/js/api.js，此文件是前端页面调用的接口前缀，包含测试和上线的IP地址。若无法访问此接口，
